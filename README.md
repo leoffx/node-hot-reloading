@@ -6,13 +6,29 @@ If you change the file `logic.js` and save it, the changes will be reflected in 
 
 ## Usage
 
+### TS
+
+Install dependencies:
+
+```
+npm i
+```
+
+Run:
+
+```
+npx tsx ts/index.ts
+```
+
+### JS
+
 Run
 
 ```
-node index.js
+node js/index.js
 ```
 
-Output:
+## Output:
 
 ```javascript
 foo 0

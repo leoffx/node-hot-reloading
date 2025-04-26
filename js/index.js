@@ -3,12 +3,12 @@ const path = require("path");
 
 function init() {
   function getLogicModule() {
-    delete require.cache[require.resolve("./logic")];
-    return require("./logic");
+    delete require.cache[require.resolve("./logic.js")];
+    return require("./logic.js");
   }
 
   let logicModule = getLogicModule();
-  const logicFilePath = path.resolve("./logic.js");
+  const logicFilePath = path.resolve("./js/logic.js");
   fs.watch(logicFilePath, (eventType) => {
     if (eventType === "change") {
       try {
